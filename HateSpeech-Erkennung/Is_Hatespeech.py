@@ -34,8 +34,8 @@ CLASSES = [
 ] 
 
 #hardrule Liste importieren
-path = r"C:\Users\thiel\OneDrive\Desktop\AIceberg\Data\hardrules.csv"
-hardrules=pd.read_csv(path, sep=";")
+
+hardrules=pd.read_csv('/../Data/hardrules.csv', sep=";")
 hardrules = list(hardrules[hardrules.iloc[:, 1] == 1].iloc[: , 0])
 hardrules = [ item.lower() for item in hardrules]
 thres = 0.1024
@@ -64,8 +64,10 @@ def is_HardRules(query):
        return False
 
 
+
+# example
 #print(is_HardRules('doppeldepp'))
 # start = timer()
-# print(is_hatespeech('Wieso wird in dem Artikel so hervorgehoben das der mutmaßliche Erfinder der Geschichte schwul ist? Hat das irgendeine Bedeutung?'))
+# print(is_hatespeech('Du bist ein Arschloch!'))
 # end = timer()
 # print(end-start)

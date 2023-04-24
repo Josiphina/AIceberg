@@ -1,0 +1,9 @@
+detoxify
+googletrans >= 3.0.0
+numpy
+joblib
+pandas >= 1.1.2
+scikit-learn >= 0.23.2
+matplotlib
+sys
+timeit
