@@ -11,7 +11,7 @@ Furthermore, we handled the problem of language specific hatspeech by adding a f
 
 ## How to use
 
-Use Is_hatespeech.is_hatespeech(query) to apply hatespeech detection model on text sequence (in German). Use Is_Hatespeech.is_hatespeech.is_HardRules(query) to check if the query is contained in the list of German swear words . Ther is an example provided in the Is_Hatespeech file to test run the model.
+Use Is_hatespeech.is_hatespeech(query) to apply hatespeech detection model on text sequence (in German). Use Is_Hatespeech.is_hatespeech.is_HardRules(query) to check if the query is contained in the list of German swear words . There is an example provided in the Is_Hatespeech file to test run the model.
 
 ## Evaluation
 We evaluated our model on a test data set consisting of 30% of the entire data. To be able to compare our results with the original binary labels hatespeech (yes/no) we trained a classifier to translate the vector of seven probabilities into a binary label. Details of how we have chosen the classifier model Linear Discriminant Analysis (LDA) can be found in the evaluation folder. Additionally, we provide a diagram of the sensitivity and specificity in dependency of the threshold.
