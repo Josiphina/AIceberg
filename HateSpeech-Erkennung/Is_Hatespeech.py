@@ -4,7 +4,7 @@ from googletrans import Translator
 import joblib
 from timeit import default_timer as timer
 import sys
-sys.path.append(r"C:\Users\thiel\OneDrive\Desktop\AIceberg\detoxify")
+sys.path.append(r"path") #path of detoxify direction 
 from detoxify.detoxify import (
 
 
@@ -40,7 +40,8 @@ hardrules = list(hardrules[hardrules.iloc[:, 1] == 1].iloc[: , 0])
 hardrules = [ item.lower() for item in hardrules]
 thres = 0.1024
 
-classifier = joblib.load('20230123162746_trained_model.pkl')
+#TODO upload weights only 
+classifier = joblib.load('20230123162746_trained_model.pkl') 
 
 def is_hatespeech(query):
     translator = Translator()
