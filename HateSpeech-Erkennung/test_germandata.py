@@ -1,6 +1,6 @@
 import sys
 import numpy as np
-sys.path.append(r"C:\Users\thiel\OneDrive\Desktop\AIceberg\detoxify")
+sys.path.append(r"detoxifypath") #path of detoxify direction
 import pandas as pd
 
 from detoxify.detoxify import (
